@@ -1,8 +1,18 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "lib": ["es5", "dom"],
-      "types": ["cypress", "node", "cypress-axe", "cypress-audit", "@cypress-audit/lighthouse"]
-    },
-    "include": ["**/*.ts", "./index.d.ts"],
-  }
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "node",
+      "cypress-axe"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "./index.d.ts"
+  ],
+}

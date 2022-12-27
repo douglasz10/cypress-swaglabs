@@ -3,8 +3,10 @@
 
 describe('Lighthouse  Example', () => {
 
-    it.skip('Lighthouse test', () => {
+    it('Lighthouse test', () => {
         cy.loginSwagLabs()
+        //cy.clearCookies()
+       //cy.reload()
 
         const thresholds = {
             performance: 90,
@@ -15,6 +17,7 @@ describe('Lighthouse  Example', () => {
       
           const opts = {
             formFactor: 'desktop',
+            disableStorageReset: false ,
             screenEmulation: {
               mobile: false,
               disable: false,
